@@ -1,0 +1,29 @@
+:root {
+    --blue: #064789;
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    background-color: var(--white);
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: var(--blue);
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
