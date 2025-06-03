@@ -11,7 +11,12 @@ body {
     flex-direction: column;
 }
 
-main, h2 {
+hr {
+    border: 1px solid black;
+    margin-bottom: 1em;
+}
+
+main, h2, p {
     margin: 1.5rem;
 }
 
@@ -68,4 +73,35 @@ main, h2 {
 
 .FeaturedEvent:hover {
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.5);
+}
+
+.login {
+    padding: 0.8em;
+    margin: 0 0.5em 0 0.5em;
+    border-radius: 3px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 16em;
+}
+
+#LoginPage main label {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .FeaturedEvent {
+        min-width: 10em;
+        max-width: 20em;
+    }
+
+    #FeaturedEvents {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+    }
 }
