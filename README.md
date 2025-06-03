@@ -1,3 +1,3 @@
-https://robin-britz-ticket-hub.netlify.app/
+https://robin-britz-ticket-hub.infinityfreeapp.com/
 
 Ticket Hub Web App
