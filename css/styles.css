@@ -78,7 +78,8 @@ p {
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.5);
 }
 
-.login {
+.login,
+.AccountDetails {
     padding: 0.8em;
     margin: 0 0.5em 0 0.5em;
     border-radius: 3px;
@@ -91,17 +92,22 @@ p {
     max-width: 16em;
 }
 
-#LoginPage main label {
+#LoginPage main label,
+#RegisterPage main label,
+#AccountDetailsHeading {
     font-size: 1.5rem;
 }
 
-#LoginPage {
+#LoginPage,
+#RegisterPage,
+#AccountPage {
     display: grid;
     place-items: center;
     min-height: 50vh;
 }
 
-#LoginButton:hover {
+#LoginButton:hover,
+#RegisterButton:hover {
     transition: 0.5s;
     background-color: var(--blue);
     color: var(--white)
