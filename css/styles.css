@@ -1,11 +1,18 @@
 :root {
-    --blue: #064789;
+    --blue: #0040ff;
     --white: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
     margin: 0;
     background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+main, h2 {
+    margin: 1.5rem;
 }
 
 #navbar {
@@ -26,4 +33,39 @@ body {
     text-align: center;
     padding: 14px;
     text-decoration: none;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+#CallToAction {
+    background-image: linear-gradient(rgba(0, 64, 255, 0.5), rgba(6, 0, 121, 0.5)), url("/images/hero-banner.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#CallToActionText {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    color: white;
+}
+
+.FeaturedEvent {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin: 1rem;
+}
+
+.FeaturedEvent:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.5);
 }
