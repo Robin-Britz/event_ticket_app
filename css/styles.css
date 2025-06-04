@@ -1,6 +1,7 @@
 :root {
     --blue: #0040ff;
     --white: #fff;
+    --hero-banner: "/images/hero-banner.jpg"
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -49,7 +50,7 @@ p {
 }
 
 #CallToAction {
-    background-image: linear-gradient(rgba(0, 64, 255, 0.5), rgba(6, 0, 121, 0.5)), url("/images/hero-banner.jpg");
+    background-image: linear-gradient(rgba(0, 64, 255, 0.5), rgba(6, 0, 121, 0.5)), url("../images/hero-banner.jpg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
