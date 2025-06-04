@@ -43,6 +43,11 @@ p {
     text-decoration: none;
 }
 
+#navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--white);
+}
+
 .logo {
     width: 32px;
     height: 32px;
