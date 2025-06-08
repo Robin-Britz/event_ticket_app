@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = $checkStmt->get_result();
 
     if ($result->num_rows > 0) {
-        echo "Username or email already exists!";
+        echo "Username already exists!";
     } else {
         // Proceed with registration
         $stmt = $conn->prepare("INSERT INTO users (Username, Password) VALUES (?, ?)");
