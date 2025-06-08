@@ -30,10 +30,10 @@
         <main>
             <label for="form">Account Creation</label>
             <hr>
-            <form class="form" action="Submit">
-                <input class="login" type="text" placeholder="Username" required><br>
-                <input class="login" type="password" placeholder="Password" required><br>
-                <input id="RegisterButton" class="login" type="button" value="Register">
+            <form class="form" action="php/register.php" method="post">
+                <input class="login" name="username" type="text" placeholder="Username" required><br>
+                <input class="login" name="password" type="password" placeholder="Password" required><br>
+                <input id="RegisterButton" class="login" type="submit" value="Register">
                 <span>&nbsp;&nbsp;Already have an account? <a href="login.html">Login</a></span>
             </form>
         </main>

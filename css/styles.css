@@ -112,8 +112,8 @@ p {
 
 #LoginButton:hover,
 #RegisterButton:hover,
-#ContactButton:hover
- {
+#ContactButton:hover,
+.BuyButton:hover {
     transition: 0.5s;
     background-color: var(--blue);
     color: var(--white)
@@ -136,13 +136,28 @@ p {
     margin: 2em;
 }
 
-input, textarea {
+input,
+textarea,
+.BuyButton,
+.BuyQty {
     padding: 0.9em;
     margin-left: 2em;
     border-style: 1px solid #000;
 }
 
-form label, address {
+.BuyButton,
+.BuyQty {
+    font-weight: bold;
+    margin-left: auto;
+    padding: 0.5em 0.9em;
+}
+
+.BuyQty {
+    width: 2.2em;
+}
+
+form label,
+address {
     margin-left: 1.6em;
 }
 
@@ -152,7 +167,8 @@ form label, address {
         max-width: 20em;
     }
 
-    form, .contactparagraph {
+    form,
+    .contactparagraph {
         max-width: 30em;
     }
 

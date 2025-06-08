@@ -7,6 +7,8 @@
     <title>Ticket Hub - An Online Event Ticketing System</title>
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -46,47 +48,59 @@
     <!-- Featured events section with individual events in blocks -->
     <h2>Featured Events</h2>
     <div id="FeaturedEvents">
-        <div class="FeaturedEvent">
+        <div class="FeaturedEvent" id="eventone">
             <h3>Neon Nights: Electronic Dance Festival</h3>
             📍 Location: Downtown Arena<br>
-            📅 Date: Sat, July 20, 2024<br>
+            📅 Date: Sat, July 20, 2025<br>
             ⏰ Time: 8:00 PM - 2:00 AM<br>
             🎟️ Price: R49.99 - R149.99<br><br>
             <strong>Description:</strong><br>Immerse yourself in a night of pulsating beats and dazzling light shows
             with top DJs like Kaskade, Zedd, and local talent. VIP passes include lounge access and meet-and-greets!
+            <br><br>
+            <input class="BuyQty" type="number" value="0">
+            <input onclick="generatePDF()" class="BuyButton" type="button" value="Buy">
         </div>
         <br>
 
         <div class="FeaturedEvent">
             <h3>Slam Dunk Pro-Am Basketball Tournament</h3>
             📍 Location: City Sports Complex<br>
-            📅 Date: Fri-Sun, August 9-11, 2024<br>
+            📅 Date: Fri-Sun, August 9-11, 2025<br>
             ⏰ Time: 12:00 PM - 8:00 PM (Daily)<br>
             🎟️ Price: R15 (Single Day) / R35 (Weekend Pass)<br><br>
             <strong>Description:</strong><br>Watch rising stars and former NBA players face off in this high-energy
             tournament. Food trucks, merch stands, and halftime contests included!
+            <br><br>
+            <input class="BuyQty" type="number" value="0">
+            <input class="BuyButton" type="button" value="Buy">
         </div>
         <br>
 
         <div class="FeaturedEvent">
             <h3>Indie Vibes: Summer Music Series</h3>
             📍 Location: Riverside Park (Outdoor Stage)<br>
-            📅 Date: Sun, July 28, 2024<br>
+            📅 Date: Sun, July 28, 2025<br>
             ⏰ Time: 4:00 PM - 10:00 PM<br>
             🎟️ Price: R25 (Early Bird) / R35 (Gate)<br><br>
             <strong>Description:</strong><br>Chill under the stars with breakout indie artists like The Marías and
             Dayglow. Bring a blanket - picnics welcome!
+            <br><br>
+            <input class="BuyQty" type="number" value="0">
+            <input class="BuyButton" type="button" value="Buy">
         </div>
         <br>
 
         <div class="FeaturedEvent">
             <h3>Mystery Lovers' Book Club: Live Thriller Night</h3>
             📍 Location: The Haunted Library (Pop-Up Venue)<br>
-            📅 Date: Fri, October 18, 2024<br>
+            📅 Date: Fri, October 18, 2025<br>
             ⏰ Time: 7:00 PM - 9:30 PM<br>
             🎟️ Price: R12 (Includes Signed Booklet)<br><br>
             <strong>Description:</strong><br>A chilling evening of suspense! Join bestselling thriller authors for
             readings, Q&As, and a murder-mystery game. Costumes encouraged!
+            <br><br>
+            <input class="BuyQty" type="number" value="0">
+            <input class="BuyButton" type="button" value="Buy">
         </div>
         <br>
     </div>
