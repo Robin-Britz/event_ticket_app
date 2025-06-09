@@ -27,12 +27,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->fetch();
 
         if (password_verify($pass, $hashedPassword)) {
-            echo "Login successful! Welcome, " . htmlspecialchars($user) . ".";
+            header("Location: ../login_success.html"); // Redirect back to HTML
+            exit();
         } else {
-            echo "Invalid password. Please try again.";
+            header("Location: ../login_error.html"); // Redirect back to HTML
+            exit();
         }
     } else {
-        echo "User does not exist. Please create an account.";
+        header("Location: ../login_error.html"); // Redirect back to HTML
     }
     $stmt->close();
     $conn->close();

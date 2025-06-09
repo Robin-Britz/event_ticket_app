@@ -23,16 +23,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = $checkStmt->get_result();
 
     if ($result->num_rows > 0) {
-        echo "Username already exists!";
+        header("Location: ../register_error.html"); // Redirect back to HTML
+        exit();
     } else {
         // Proceed with registration
         $stmt = $conn->prepare("INSERT INTO users (Username, Password) VALUES (?, ?)");
         $stmt->bind_param("ss", $user, $pass);
 
         if ($stmt->execute()) {
-            echo "User registered successfully!";
+            header("Location: ../register_success.html"); // Redirect back to HTML
+            exit();
         } else {
-            echo "Error: " . $stmt->error;
+            header("Location: ../register_error.html"); // Redirect back to HTML
         }
         $stmt->close();
     }
