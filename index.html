@@ -7,7 +7,10 @@
     <title>Ticket Hub - An Online Event Ticketing System</title>
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- PDF JS external script/library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- QR Code JS external script/library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -47,7 +50,7 @@
     <!-- Featured events section with individual events in blocks -->
     <h2>Featured Events</h2>
     <div id="FeaturedEvents">
-        <div class="FeaturedEvent" id="eventone">
+        <div class="FeaturedEvent">
             <h3>Neon Nights: Electronic Dance Festival</h3>
             📍 Location: Downtown Arena<br>
             📅 Date: Sat, July 20, 2025<br>
@@ -71,7 +74,7 @@
             tournament. Food trucks, merch stands, and halftime contests included!
             <br><br>
             <input class="BuyQty" type="number" value="0" min="0">
-            <input class="BuyButton" type="button" value="Buy">
+            <input onclick="generatePDF()" class="BuyButton" type="button" value="Buy">
         </div>
         <br>
 
@@ -85,7 +88,7 @@
             Dayglow. Bring a blanket - picnics welcome!
             <br><br>
             <input class="BuyQty" type="number" value="0" min="0">
-            <input class="BuyButton" type="button" value="Buy">
+            <input onclick="generatePDF()" class="BuyButton" type="button" value="Buy">
         </div>
         <br>
 
@@ -99,7 +102,7 @@
             readings, Q&As, and a murder-mystery game. Costumes encouraged!
             <br><br>
             <input class="BuyQty" type="number" value="0" min="0">
-            <input class="BuyButton" type="button" value="Buy">
+            <input onclick="generatePDF()" class="BuyButton" type="button" value="Buy">
         </div>
         <br>
     </div>
